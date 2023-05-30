@@ -31,7 +31,7 @@ Following technologies were used in developing this app:
 
 ### ✨ Screenshots ###
 #### App running ####
-![App running](https://i.imgur.com/6zvVC1K.gif)
+![App running](https://imgur.com/GYNV26D.gif)
 #### Map Example ####
 ![Map](https://i.imgur.com/O0jBNom.png)
 
