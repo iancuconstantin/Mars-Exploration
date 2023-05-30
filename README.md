@@ -38,46 +38,53 @@ Following technologies were used in developing this app:
 ## Installation
 1. Clone the repository to your local machine.
 2. Open the project in your preferred Integrated Development Environment IDE.
-3. In the Application class, make sure to update the following database connection details:
-```sh
+3. In the `Application` class, make sure to update the following database connection details:
+
+```java
 Database database = new Database(
         "jdbc:postgresql://localhost:5432/mars_exploration",
         "postgres",
         "postgres");
 ```
-Replace the connection URL jdbc:postgresql://localhost:5432/mars_exploration, username postgres, and password postgres with the appropriate values for your PostgreSQL database.
+Replace the connection URL `jdbc:postgresql://localhost:5432/mars_exploration`, username `postgres`, and password `postgres` with the appropriate values for your PostgreSQL database.
 
 4. In the same class, update the following simulation details:
-```sh
+
+
+```java
 SimulationInput input = new SimulationInput(
         "src/main/resources/sprint3-3.map",
         new Coordinate(19, 9),
         1000,
         "src/main/resources/exploration-1111.log");
 ```
-* src/main/resources/sprint3-3.map: This should be the file path of the map file you want to use for the simulation. Replace it with the correct file path.
 
-* new Coordinate(19, 9): Update the coordinates 19 and 9 with the desired starting coordinate for the simulation. This represents the initial position of the simulation.
+* `src/main/resources/sprint3-3.map`: This should be the file path of the map file you want to use for the simulation. Replace it with the correct file path.
 
-* 1000: Replace 1000 with the desired maximum number of simulation steps. This determines the limit for the simulation to prevent it from running indefinitely.
+* `new Coordinate(19, 9)`: Update the coordinates 19 and 9 with the desired starting coordinate for the simulation. This represents the initial position of the simulation.
 
-* src/main/resources/exploration-1111.log: Update the file path src/main/resources/exploration-1111.log with the desired file path to save the simulation log. Make sure the specified path is valid and accessible.
+* `1000`: Replace 1000 with the desired maximum number of simulation steps. This determines the limit for the simulation to prevent it from running indefinitely.
+
+* `src/main/resources/exploration-1111.log`: Update the file path `src/main/resources/exploration-1111.log` with the desired file path to save the simulation log. Make sure the specified path is valid and accessible.
 
 By updating these values, you can customize the simulation input parameters to match your specific requirements.
 
-5. Navigate to the folder containing the pom.xml file in your project directory.
+5. Navigate to the folder containing the `pom.xml` file in your project directory.
 6. Build the project using the following command to package it into a JAR file:
-```sh
-mvn package
-```
-7. After the build is successful, navigate to the \target folder in your project directory:
-```sh
-cd target
-```
+
+```mvn package```
+
+7. After the build is successful, navigate to the `\target` folder in your project directory:
+
+```cd target```
+
 Ensure that you have the latest PostgreSQL JDBC driver (e.g., `postgresql-42.6.0.jar`) and the generated JAR file (`mars-exploration-1.0-SNAPSHOT.jar`) available on your system.
+
 8. Next, set up the `class_path` environment variable to include the paths to the PostgreSQL JDBC driver and the application JAR file.
+
 9. . Run the application using the `java -jar` command followed by the name of the JAR file.
-```sh
+
+``` 
 java -cp "path\to\postgres_driver\postgresql-42.6.0.jar;C:\local-directory\mars-exploration-simulator\target\mars-exploration-1.0-SNAPSHOT.jar" com.codecool.marsexploration.Application
 ```
 
