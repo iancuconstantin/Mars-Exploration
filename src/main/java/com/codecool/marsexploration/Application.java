@@ -17,6 +17,7 @@ import com.codecool.marsexploration.logic.analyzer.SuccessAnalyzer;
 import com.codecool.marsexploration.logic.analyzer.TimeOutAnalizer;
 import com.codecool.marsexploration.logic.phase.*;
 import com.codecool.marsexploration.utils.LogSaver;
+import com.codecool.marsexploration.utils.ReadFile;
 
 import java.util.ArrayList;
 import java.util.List;
