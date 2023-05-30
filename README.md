@@ -31,10 +31,7 @@ Following technologies were used in developing this app:
 
 ### ✨ Screenshots ###
 #### App running ####
-<video controls>
-  <source src="https://i.imgur.com/GYNV26D.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![App running](https://i.imgur.com/a01VYCR.gif)
 #### Map Example ####
 ![Map](https://i.imgur.com/O0jBNom.png)
 
