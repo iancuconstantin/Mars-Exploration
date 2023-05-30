@@ -74,10 +74,9 @@ mvn package
 ```sh
 cd target
 ```
-
-Ensure that you have the latest PostgreSQL JDBC driver (e.g., postgresql-42.6.0.jar) and the generated JAR file (mars-exploration-1.0-SNAPSHOT.jar) available on your system.
-8. Next, set up the class_path environment variable to include the paths to the PostgreSQL JDBC driver and the application JAR file.
-9. Run the application using the java -jar command followed by the name of the JAR file.
+Ensure that you have the latest PostgreSQL JDBC driver (e.g., `postgresql-42.6.0.jar`) and the generated JAR file (`mars-exploration-1.0-SNAPSHOT.jar`) available on your system.
+8. Next, set up the `class_path` environment variable to include the paths to the PostgreSQL JDBC driver and the application JAR file.
+9. . Run the application using the `java -jar` command followed by the name of the JAR file.
 ```sh
 java -cp "path\to\postgres_driver\postgresql-42.6.0.jar;C:\local-directory\mars-exploration-simulator\target\mars-exploration-1.0-SNAPSHOT.jar" com.codecool.marsexploration.Application
 ```
